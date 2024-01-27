@@ -227,11 +227,11 @@ const eventListeners = () => {
 
     // grab the values from the form inputs and create an object
     const newVideo = {
-      videoId: document.querySelector("#videoID").value,
+      videoId: document.querySelector("#videoId").value,
       title: document.querySelector("#title").value,
       category: document.querySelector("#category").value,
-      //this is .checked because favorite on the form is a checkbox
-      favorite: document.querySelector("videoID").checked
+      //this is .checked because favorite on the form is a checkbox and will return true or false
+      favorite: document.querySelector("#favorite").checked
     }
     // push that object to the data array  
     data.push(newVideo);
